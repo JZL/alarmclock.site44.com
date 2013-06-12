@@ -1,0 +1,231 @@
+body{
+  overflow: hidden;
+}
+
+#clock {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  width: 400px;
+  margin: 150px auto;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 2px 12px rgba(0, 0, 0, 1);
+  display: inline;
+}
+
+.meteocons,#weather, #buzzpp {
+  text-shadow: 0px 2px 12px rgba(0, 0, 0, .25);
+}
+
+#hours,#colon,#minutes,#AmPm,#controlalarm {
+  display: inline;
+}
+
+#hours,#colon,#minutes,#date {
+  font-size: 900%;
+}
+
+#AmPm {
+  font-size: 120%;
+}
+
+#date {
+  font-size: 120%;
+  display: inline-block;
+}
+
+/*
+Docs at http://simpleweather.monkeecreate.com
+
+Look inspired by http://www.degreees.com/
+Used for demo purposes.
+ */
+#weather {
+  position: relative;
+  text-align: right;
+  opacity: 0.7;
+  float: right;
+  padding: 0px;
+  max-width: 50%;
+  overflow-wrap: break-word;
+  overflow-x: break;
+  word-wrap: break-word;
+  white-space: normal;
+  color: white;
+}
+
+#weather #currenttemp {
+  font-size: 350%;
+}
+
+#weather li {
+  display: inline-block;
+}
+
+#jplayerwhole {
+  text-align: left;
+}
+
+#jplayerandweather {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+  *display: inline;
+}
+
+#left {
+  text-align: left;
+  margin-left: 1em;
+}
+
+#right {
+  text-align: right;
+  margin-right: 1em;
+}
+
+#jplayerandweather {
+  overflow: auto;
+  width: 100%;
+}
+
+.array {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  font-size: 275%;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.meteocons {
+  font-family: 'icomoon';
+  display: inline;
+  font-size: 599%;
+  text-align: center;
+}
+
+#buzzpp{
+font-family: 'icomoon';
+font-size: 550%;
+text-align: left;
+vertical-align: top;
+height: 500px;
+overflow: auto;
+display: inline-table;
+height: 0%;
+font-weight: 500;
+}
+
+#controlalarm {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+}
+
+[name="value"] {
+  color: red;
+  background: transparent;
+  border: 0;
+  text-align: center;
+  outline: none;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  font-size: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  overflow:  hidden;
+}
+
+[type="submit"] {
+  background: transparent;
+  border: 0;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 700;
+  font-size: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+
+#toptable{
+  width:100%;
+font-family: 'Arimo', sans-serif;
+font-weight: 700;
+text-align: center;
+color: white;
+text-shadow: 0px 2px 12px rgba(0, 0, 0, 1);
+vertical-align: top;
+padding: 0;
+white-space: nowrap;
+border-spacing: 0;
+border-collapse: collapse;
+}
+
+.center{
+margin: 0 auto;
+text-align: center;
+position: absolute;
+width: 500px;
+margin-left: -250px;
+margin-right: -250px;
+right: 50%;
+}
+
+.left{
+  float: left;
+  text-align: left;
+  padding-left: 10px
+}
+
+.right{
+  float: right;
+  text-align: right;
+  padding-right: 10px
+}
+
+#timecheck{
+  font-size: 70%
+}
+
+#timecheck input{
+  -webkit-appearance: none;
+background-color: white;
+border: 1px solid #cacece;
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+padding: .7%;
+border-radius: 3px;
+display: inline-block;
+position: relative;
+opacity: .2;
+box-shadow: 0px 0px 20px rgba(0,0,0,.8);
+}
+
+#timecheck input[type='radio']:hover{
+  -webkit-appearance: none;
+opacity: .5;
+box-shadow: 0px 0px 20px rgba(0,0,0,3);
+}
+
+#timecheck input[type='radio']:checked{
+  -webkit-appearance: none;
+opacity: .7;
+box-shadow: 0px 0px 20px rgba(0,0,0,.6);
+}
+
+#timecheck input[type='text']{
+  width: 60px;
+  height: 19px;
+  padding: 0;
+  text-align: center;
+}
+
+#timecheck input[type='text']:focus{
+  -webkit-appearance: none;
+opacity: .7;
+box-shadow: 0px 0px 20px rgba(0,0,0,.6);
+}

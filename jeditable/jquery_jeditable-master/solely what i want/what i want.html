@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="jquery.jeditable.js" type="text/javascript"></script>
+
+<div id="array"></div>
+  <script>
+var html=""
+var test = ["hello", "again", "whats happening"]
+for (var i = test.length - 1; i >= 0; i--) {
+ html += "<div class='array'>" + test[i] + "</div>"
+ console.log(test[i])
+	if(i==0){
+$("#array").html(html);		
+	}
+};
+$('.array').editable(function(value, settings) { 
+     console.log(this);
+     console.log(value);
+     console.log(settings);
+     return(value);
+  }, { 
+     type    : 'textarea',
+     submit  : 'OK',
+ });
+  </script>
+</body>
+</html>
